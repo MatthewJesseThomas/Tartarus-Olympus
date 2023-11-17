@@ -1,0 +1,82 @@
+/* Custom styles for your page */
+body {
+    padding-top: 56px;
+    margin-bottom: 60px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+section {
+    padding: 40px 0;
+}
+
+footer {
+    background-color: #4a154b;
+    color: #fff;
+    padding: 40px 0;
+}
+
+h5 {
+    color: #ff80ab;
+}
+
+/* Style the map container */
+#map {
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+}
+
+/* Social icons style */
+.social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #4a154b;
+    transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+    color: #ff80ab;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #663399;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #ff80ab;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ff80ab !important;
+}
+
+/* Add animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated {
+    animation: fadeInUp 1s ease;
+}
