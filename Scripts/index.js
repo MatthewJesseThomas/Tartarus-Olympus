@@ -1,7 +1,6 @@
-// Code for mappu
 // Initialize the map
-const map = L.map('map').setView([51.505, -0.09], 13);
-  
+const map = L.map('map').setView([YOUR_LATITUDE, YOUR_LONGITUDE], 13);
+
 // Add the Mapbox tile layer
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
     attribution: '© OpenStreetMap contributors',
@@ -11,5 +10,4 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(map);
 
 // Add a marker to the map
-let marker = L.marker([51.505, -0.09]).addTo(map);
-// Endu Ofu Codu
+let marker = L.marker([YOUR_LATITUDE, YOUR_LONGITUDE]).addTo(map);
