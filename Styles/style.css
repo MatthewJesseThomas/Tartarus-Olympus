@@ -1,10 +1,24 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Share+Tech&display=swap');
+
+:root {
+    --primaryColor: rgb(93, 21, 21);
+    --secondaryColor: silver;
+    --alternativeColor: rgb(3, 3, 148);
+    --textColor: rgb(49, 76, 100);
+    --mainBoxShadow: 0.3vw 0.3vw 1vw rgba(120, 200, 87, 11);
+}
+
 *,
-*,
-*{}
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Custom styles for your page */
 body {
-    padding-top: 56px;
-    margin-bottom: 60px;
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
 }
@@ -14,13 +28,13 @@ section {
 }
 
 footer {
-    background-color: #4a154b;
+    background-color: var(--primaryColor);
     color: #fff;
     padding: 40px 0;
 }
 
 h5 {
-    color: #ff80ab;
+    color: var(--alternativeColor);
 }
 
 /* Style the map container */
@@ -34,12 +48,12 @@ h5 {
 .social-icons i {
     font-size: 24px;
     margin: 0 10px;
-    color: #4a154b;
+    color: var(--secondaryColor);
     transition: color 0.3s ease;
 }
 
 .social-icons i:hover {
-    color: #ff80ab;
+    color: var(--alternativeColor);
 }
 
 /* Navbar styles */
@@ -55,7 +69,7 @@ h5 {
 }
 
 .navbar-brand:hover {
-    color: #ff80ab;
+    color: var(--alternativeColor);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -65,7 +79,7 @@ h5 {
 
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #ff80ab !important;
+    color: var(--alternativeColor) !important;
 }
 
 /* Add animations */
@@ -82,4 +96,178 @@ h5 {
 
 .animated {
     animation: fadeInUp 1s ease;
+}
+
+/* Additional styles for specific elements */
+.review {
+    background: #dcdcdc;
+}
+
+.total-like-user-main a {
+    display: inline-block;
+    margin: 0 -17px 0 0;
+}
+
+.total-like {
+    border: 1px solid var(--primaryColor);
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+
+.restaurant-detailed-ratings-and-reviews hr {
+    margin: 0 -24px;
+}
+
+.graph-star-rating-header .star-rating {
+    font-size: 17px;
+}
+
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
+}
+
+.rating-list {
+    display: inline-flex;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.rating-list-left {
+    height: 16px;
+    line-height: 29px;
+    width: 10%;
+}
+
+.rating-list-center {
+    width: 80%;
+}
+
+.rating-list-right {
+    line-height: 29px;
+    text-align: right;
+    width: 10%;
+}
+
+.restaurant-slider-pics {
+    bottom: 0;
+    font-size: 12px;
+    left: 0;
+    z-index: 999;
+    padding: 0 10px;
+}
+
+.restaurant-slider-view-all {
+    bottom: 15px;
+    right: 15px;
+    z-index: 999;
+}
+
+.offer-dedicated-nav .nav-link.active,
+.offer-dedicated-nav .nav-link:hover,
+.offer-dedicated-nav .nav-link:focus {
+    border-color: var(--alternativeColor);
+    color: var(--alternativeColor);
+}
+
+.offer-dedicated-nav .nav-link {
+    border-bottom: 2px solid #fff;
+    color: var(--textColor);
+    padding: 16px 0;
+    font-weight: 600;
+}
+
+.offer-dedicated-nav .nav-item {
+    margin: 0 37px 0 0;
+}
+
+.restaurant-detailed-action-btn {
+    margin-top: 12px;
+}
+
+.restaurant-detailed-header-right .btn-success {
+    border-radius: 3px;
+    height: 45px;
+    margin: -18px 0 18px;
+    min-width: 130px;
+    padding: 7px;
+}
+
+.text-black {
+    color: var(--textColor);
+}
+
+.icon-overlap {
+    bottom: -23px;
+    font-size: 74px;
+    opacity: 0.23;
+    position: absolute;
+    right: -32px;
+}
+
+.menu-list img {
+    width: 41px;
+    height: 41px;
+    object-fit: cover;
+}
+
+.restaurant-detailed-header-left img {
+    width: 88px;
+    height: 88px;
+    border-radius: 3px;
+    object-fit: cover;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+}
+
+.reviews-members .media .mr-3 {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+}
+
+.rounded-pill {
+    border-radius: 50rem!important;
+}
+
+.total-like-user {
+    border: 2px solid #fff;
+    height: 34px;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    width: 34px;
+}
+
+.total-like-user-main a {
+    display: inline-block;
+    margin: 0 -17px 0 0;
+}
+
+.total-like {
+    border: 1px solid;
+    border-radius: 50px;
+    display: inline-block;
+    font-weight: 500;
+    height: 34px;
+    line-height: 33px;
+    padding: 0 13px;
+    vertical-align: top;
+}
+
+.restaurant-detailed-ratings-and-reviews hr {
+    margin: 0 -24px;
+}
+
+.graph-star-rating-header .star-rating {
+    font-size: 17px;
+}
+
+.progress {
+    background: #f2f4f8 none repeat scroll 0 0;
+    border-radius: 0;
+    height: 30px;
 }
